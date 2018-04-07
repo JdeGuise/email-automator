@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from smtplib import SMTPRecipientsRefused
 
 from Config import config
-from Config import recruiterconfig
+from Config import recruiter_config
 
 import smtplib
 import getpass
@@ -55,7 +55,7 @@ if __name__ == '__main__':
 		from_email = config.gmail_creds['user'],
 		to_email = email_details['To'],
 		subject = email_details['Subject'],
-		message = recruiterconfig.recruiter_config['rc_msg'],
+		message = recruiter_config.recruiter_config['rc_msg'],
 		password = config.gmail_creds['pwd'],
 		signature = config.gmail_creds['signature']
 	)
