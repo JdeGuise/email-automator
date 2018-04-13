@@ -1,0 +1,22 @@
+Periodically check the 'Job Opps' folder
+
+Note how many emails there are in the 'Job Opps' folder
+
+If the number increases, find the difference between the old number and the new number, set the value in N
+
+Sorting by most recently received, retrieve the email domains of the N most recent entries
+
+Check them against the list of domains in the CSV
+
+If they don't exist, add them to the list.
+
+
+
+EXTENSION
+
+Check for keywords in those recent emails
+	 - Michigan, Grand Rapids, Lansing, Ann Arbor, Detroit
+
+	 - Colorado, Denver, Colorado Springs, Boulder, Greenwood, Fort Collins
+
+	If ANY of these keywords are found, automatically add the email to the 'State' pile that matches in the CSV
